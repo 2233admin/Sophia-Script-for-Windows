@@ -110,7 +110,7 @@ switch ((Get-CimInstance -Namespace root/CIMV2 -ClassName CIM_OperatingSystem).B
 				{
 					$LatestRelease = $JSON.Sophia_Script_Windows_11
 					$URL = "https://github.com/farag2/Sophia-Script-for-Windows/releases/download/$LatestGitHubRelease/Sophia.Script.for.Windows.11.Arm.PowerShell.7.v$LatestRelease.zip"
-					$Hash = "Hash_Sophia_Script_Windows_11_Arm_PowerShell_7"
+					$Hash = "Hash_Sophia_Script_Windows_11_ARM_PowerShell_7"
 				}
 				else
 				{
@@ -127,7 +127,7 @@ switch ((Get-CimInstance -Namespace root/CIMV2 -ClassName CIM_OperatingSystem).B
 			{
 				$LatestRelease = $JSON.Sophia_Script_Windows_11
 				$URL = "https://github.com/farag2/Sophia-Script-for-Windows/releases/download/$LatestGitHubRelease/Sophia.Script.for.Windows.11.Arm.v$LatestRelease.zip"
-				$Hash = "Hash_Sophia_Script_Windows_11_Arm_PowerShell_5_1"
+				$Hash = "Hash_Sophia_Script_Windows_11_ARM_PowerShell_5_1"
 			}
 			else
 			{

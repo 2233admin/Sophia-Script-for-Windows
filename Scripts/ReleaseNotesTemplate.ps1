@@ -29,8 +29,8 @@ $Archives = [ordered]@{
 	"Sophia_Script_Windows_11_PowerShell_7"             = "Sophia.Script.for.Windows.11.PowerShell.7.v$($JSON.Sophia_Script_Windows_11).zip"
 	"Sophia_Script_Windows_11_LTSC_2024_PowerShell_5_1" = "Sophia.Script.for.Windows.11.LTSC.2024.v$($JSON.Sophia_Script_Windows_11_LTSC_2024).zip"
 	"Sophia_Script_Windows_11_LTSC_2024_PowerShell_7"   = "Sophia.Script.for.Windows.11.LTSC.2024.PowerShell.7.v$($JSON.Sophia_Script_Windows_11_LTSC_2024).zip"
-	"Sophia_Script_Windows_11_Arm_PowerShell_5_1"       = "Sophia.Script.for.Windows.11.Arm.v$($JSON.Sophia_Script_Windows_11).zip"
-	"Sophia_Script_Windows_11_Arm_PowerShell_7"         = "Sophia.Script.for.Windows.11.Arm.PowerShell.7.v$($JSON.Sophia_Script_Windows_11).zip"
+	"Sophia_Script_Windows_11_ARM_PowerShell_5_1"       = "Sophia.Script.for.Windows.11.Arm.v$($JSON.Sophia_Script_Windows_11).zip"
+	"Sophia_Script_Windows_11_ARM_PowerShell_7"         = "Sophia.Script.for.Windows.11.Arm.PowerShell.7.v$($JSON.Sophia_Script_Windows_11).zip"
 	"Sophia_Script_Wrapper"                             = "Sophia.Script.Wrapper.v$($JSON.Sophia_Script_Wrapper).zip"
 }
 
@@ -52,8 +52,8 @@ foreach ($Token in $Archives.Keys)
 	-replace "SHA256_Sophia_Script_Windows_10_LTSC_2021",                $Hashes.Sophia_Script_Windows_10_LTSC_2021 `
 	-replace "SHA256_Sophia_Script_Windows_11_PowerShell_5_1",           $Hashes.Sophia_Script_Windows_11_PowerShell_5_1 `
 	-replace "SHA256_Sophia_Script_Windows_11_PowerShell_7",             $Hashes.Sophia_Script_Windows_11_PowerShell_7 `
-	-replace "SHA256_Sophia_Script_Windows_11_Arm_PowerShell_5_1",       $Hashes.Sophia_Script_Windows_11_Arm_PowerShell_5_1 `
-	-replace "SHA256_Sophia_Script_Windows_11_Arm_PowerShell_7",         $Hashes.Sophia_Script_Windows_11_Arm_PowerShell_7 `
+	-replace "SHA256_Sophia_Script_Windows_11_ARM_PowerShell_5_1",       $Hashes.Sophia_Script_Windows_11_ARM_PowerShell_5_1 `
+	-replace "SHA256_Sophia_Script_Windows_11_ARM_PowerShell_7",         $Hashes.Sophia_Script_Windows_11_ARM_PowerShell_7 `
 	-replace "SHA256_Sophia_Script_Windows_11_LTSC_2024_PowerShell_5_1", $Hashes.Sophia_Script_Windows_11_LTSC_2024_PowerShell_5_1 `
 	-replace "SHA256_Sophia_Script_Windows_11_LTSC_2024_PowerShell_7",   $Hashes.Sophia_Script_Windows_11_LTSC_2024_PowerShell_7 `
 	-replace "SHA256_Sophia_Script_Wrapper",                             $Hashes.Sophia_Script_Wrapper `
@@ -65,8 +65,8 @@ foreach ($Token in $Archives.Keys)
 	-replace "Sophia_Script_Windows_10_LTSC_2021",                $JSON.Sophia_Script_Windows_10_LTSC_2021 `
 	-replace "Sophia_Script_Windows_11_PowerShell_5_1",           $JSON.Sophia_Script_Windows_11 `
 	-replace "Sophia_Script_Windows_11_PowerShell_7",             $JSON.Sophia_Script_Windows_11 `
-	-replace "Sophia_Script_Windows_11_Arm_PowerShell_5_1",       $JSON.Sophia_Script_Windows_11 `
-	-replace "Sophia_Script_Windows_11_Arm_PowerShell_7",         $JSON.Sophia_Script_Windows_11 `
+	-replace "Sophia_Script_Windows_11_ARM_PowerShell_5_1",       $JSON.Sophia_Script_Windows_11 `
+	-replace "Sophia_Script_Windows_11_ARM_PowerShell_7",         $JSON.Sophia_Script_Windows_11 `
 	-replace "Sophia_Script_Windows_11_LTSC_2024_PowerShell_5_1", $JSON.Sophia_Script_Windows_11_LTSC_2024 `
 	-replace "Sophia_Script_Windows_11_LTSC_2024_PowerShell_7",   $JSON.Sophia_Script_Windows_11_LTSC_2024 `
 	-replace "Sophia_Script_Wrapper",                             $JSON.Sophia_Script_Wrapper

@@ -180,7 +180,7 @@ Diff from vOldVersion
     <td></td>
     <td></td>
     <td align="left">
-      <a href="https://github.com/farag2/Sophia-Script-for-Windows/releases/download/NewVersion/Sophia.Script.for.Windows.11.Arm.vSophia_Script_Windows_11_Arm_PowerShell_5_1.zip">
+      <a href="https://github.com/farag2/Sophia-Script-for-Windows/releases/download/NewVersion/Sophia.Script.for.Windows.11.Arm.vSophia_Script_Windows_11_ARM_PowerShell_5_1.zip">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/PowerShell%205.1.svg?label=Windows%2011%20Arm&amp;variant=outline&amp;size=sm&amp;mode=dark">
           <img src="https://shieldcn.dev/badge/PowerShell%205.1.svg?label=Windows%2011%20Arm&amp;variant=outline&amp;size=sm&amp;mode=light">
@@ -188,7 +188,7 @@ Diff from vOldVersion
       </a>
     </td>
     <td align="left">
-      <a href="https://www.virustotal.com/gui/file/SHA256_Sophia_Script_Windows_11_Arm_PowerShell_5_1">
+      <a href="https://www.virustotal.com/gui/file/SHA256_Sophia_Script_Windows_11_ARM_PowerShell_5_1">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/VirusTotal.svg?logo=virustotal&amp;variant=outline&amp;size=sm&amp;mode=dark">
           <img src="https://shieldcn.dev/badge/VirusTotal.svg?logo=virustotal&amp;variant=outline&amp;size=sm&amp;mode=light">
@@ -200,7 +200,7 @@ Diff from vOldVersion
     <td></td>
     <td></td>
     <td align="left">
-      <a href="https://github.com/farag2/Sophia-Script-for-Windows/releases/download/NewVersion/Sophia.Script.for.Windows.11.Arm.PowerShell.7.vSophia_Script_Windows_11_Arm_PowerShell_7.zip">
+      <a href="https://github.com/farag2/Sophia-Script-for-Windows/releases/download/NewVersion/Sophia.Script.for.Windows.11.Arm.PowerShell.7.vSophia_Script_Windows_11_ARM_PowerShell_7.zip">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/PowerShell%207.svg?label=Windows%2011%20Arm&amp;variant=outline&amp;size=sm&amp;mode=dark">
           <img src="https://shieldcn.dev/badge/PowerShell%207.svg?label=Windows%2011%20Arm&amp;variant=outline&amp;size=sm&amp;mode=light">
@@ -208,7 +208,7 @@ Diff from vOldVersion
       </a>
     </td>
     <td align="left">
-      <a href="https://www.virustotal.com/gui/file/SHA256_Sophia_Script_Windows_11_Arm_PowerShell_7">
+      <a href="https://www.virustotal.com/gui/file/SHA256_Sophia_Script_Windows_11_ARM_PowerShell_7">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/VirusTotal.svg?logo=virustotal&amp;variant=outline&amp;size=sm&amp;mode=dark">
           <img src="https://shieldcn.dev/badge/VirusTotal.svg?logo=virustotal&amp;variant=outline&amp;size=sm&amp;mode=light">

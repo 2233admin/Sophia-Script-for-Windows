@@ -92,12 +92,12 @@ switch ([int](Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_OperatingSy
 
 			if ($PSVersionTable.PSVersion.Major -eq 5)
 			{
-				$Version = "Sophia_Script_for_Windows_11_Arm"
+				$Version = "Sophia_Script_for_Windows_11_ARM"
 				$Archive = "Sophia.Script.for.Windows.11.Arm"
 			}
 			else
 			{
-				$Version = "Sophia_Script_for_Windows_11_Arm_PowerShell_7"
+				$Version = "Sophia_Script_for_Windows_11_ARM_PowerShell_7"
 				$Archive = "Sophia.Script.for.Windows.11.Arm.PowerShell.7"
 			}
 		}
