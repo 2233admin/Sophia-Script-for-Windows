@@ -3,7 +3,7 @@
 	Redirect user folders to a new location
 
 	.EXAMPLE
-	Set-KnownFolderPath -KnownFolder Desktop -Path "$env:SystemDrive:\Desktop"
+	Set-KnownFolderPath -KnownFolder Desktop -Path "$env:SystemDrive\Desktop"
 #>
 function Global:Set-KnownFolderPath
 {

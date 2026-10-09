@@ -9,8 +9,8 @@ $Editions = [ordered]@{
 	Sophia_Script_for_Windows_10_LTSC_2021              = "Sophia_Script_Windows_10_LTSC_2021"
 	Sophia_Script_for_Windows_11                        = "Sophia_Script_Windows_11"
 	Sophia_Script_for_Windows_11_PowerShell_7           = "Sophia_Script_Windows_11"
-	Sophia_Script_for_Windows_11_ARM                    = "Sophia_Script_Windows_11"
-	Sophia_Script_for_Windows_11_ARM_PowerShell_7       = "Sophia_Script_Windows_11"
+	Sophia_Script_for_Windows_11_Arm                    = "Sophia_Script_Windows_11"
+	Sophia_Script_for_Windows_11_Arm_PowerShell_7       = "Sophia_Script_Windows_11"
 	Sophia_Script_for_Windows_11_LTSC_2024              = "Sophia_Script_Windows_11_LTSC_2024"
 	Sophia_Script_for_Windows_11_LTSC_2024_PowerShell_7 = "Sophia_Script_Windows_11_LTSC_2024"
 }

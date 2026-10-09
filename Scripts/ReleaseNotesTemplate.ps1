@@ -29,14 +29,14 @@ $Archives = [ordered]@{
 	"Sophia_Script_Windows_11_PowerShell_7"             = "Sophia.Script.for.Windows.11.PowerShell.7.v$($JSON.Sophia_Script_Windows_11).zip"
 	"Sophia_Script_Windows_11_LTSC_2024_PowerShell_5_1" = "Sophia.Script.for.Windows.11.LTSC.2024.v$($JSON.Sophia_Script_Windows_11_LTSC_2024).zip"
 	"Sophia_Script_Windows_11_LTSC_2024_PowerShell_7"   = "Sophia.Script.for.Windows.11.LTSC.2024.PowerShell.7.v$($JSON.Sophia_Script_Windows_11_LTSC_2024).zip"
-	"Sophia_Script_Windows_11_ARM_PowerShell_5_1"       = "Sophia.Script.for.Windows.11.Arm.v$($JSON.Sophia_Script_Windows_11).zip"
-	"Sophia_Script_Windows_11_ARM_PowerShell_7"         = "Sophia.Script.for.Windows.11.Arm.PowerShell.7.v$($JSON.Sophia_Script_Windows_11).zip"
+	"Sophia_Script_Windows_11_Arm_PowerShell_5_1"       = "Sophia.Script.for.Windows.11.Arm.v$($JSON.Sophia_Script_Windows_11).zip"
+	"Sophia_Script_Windows_11_Arm_PowerShell_7"         = "Sophia.Script.for.Windows.11.Arm.PowerShell.7.v$($JSON.Sophia_Script_Windows_11).zip"
 	"Sophia_Script_Wrapper"                             = "Sophia.Script.Wrapper.v$($JSON.Sophia_Script_Wrapper).zip"
 }
 
 $Hashes = [ordered]@{}
 
-# Get hashes of each arhive
+# Get hashes of each archive
 foreach ($Token in $Archives.Keys)
 {
 	$Hashes[$Token] = (Get-FileHash -Path "Sophia_Script\$($Archives[$Token])" -Algorithm SHA256).Hash.ToLower()
@@ -44,7 +44,7 @@ foreach ($Token in $Archives.Keys)
 }
 
 # Replace variables with script latest versions
-(Get-Content -Path ReleaseNotesTemplate.md -Encoding utf8 -Raw) | Foreach-Object -Process {
+(Get-Content -Path ReleaseNotesTemplate.md -Encoding utf8 -Raw) | ForEach-Object -Process {
 	# ${{ github.ref_name }}
 	$_ -replace "SHA256_Sophia_Script_Windows_10_PowerShell_5_1",        $Hashes.Sophia_Script_Windows_10_PowerShell_5_1 `
 	-replace "SHA256_Sophia_Script_Windows_10_PowerShell_7",             $Hashes.Sophia_Script_Windows_10_PowerShell_7 `
@@ -52,8 +52,8 @@ foreach ($Token in $Archives.Keys)
 	-replace "SHA256_Sophia_Script_Windows_10_LTSC_2021",                $Hashes.Sophia_Script_Windows_10_LTSC_2021 `
 	-replace "SHA256_Sophia_Script_Windows_11_PowerShell_5_1",           $Hashes.Sophia_Script_Windows_11_PowerShell_5_1 `
 	-replace "SHA256_Sophia_Script_Windows_11_PowerShell_7",             $Hashes.Sophia_Script_Windows_11_PowerShell_7 `
-	-replace "SHA256_Sophia_Script_Windows_11_ARM_PowerShell_5_1",       $Hashes.Sophia_Script_Windows_11_ARM_PowerShell_5_1 `
-	-replace "SHA256_Sophia_Script_Windows_11_ARM_PowerShell_7",         $Hashes.Sophia_Script_Windows_11_ARM_PowerShell_7 `
+	-replace "SHA256_Sophia_Script_Windows_11_Arm_PowerShell_5_1",       $Hashes.Sophia_Script_Windows_11_Arm_PowerShell_5_1 `
+	-replace "SHA256_Sophia_Script_Windows_11_Arm_PowerShell_7",         $Hashes.Sophia_Script_Windows_11_Arm_PowerShell_7 `
 	-replace "SHA256_Sophia_Script_Windows_11_LTSC_2024_PowerShell_5_1", $Hashes.Sophia_Script_Windows_11_LTSC_2024_PowerShell_5_1 `
 	-replace "SHA256_Sophia_Script_Windows_11_LTSC_2024_PowerShell_7",   $Hashes.Sophia_Script_Windows_11_LTSC_2024_PowerShell_7 `
 	-replace "SHA256_Sophia_Script_Wrapper",                             $Hashes.Sophia_Script_Wrapper `
@@ -65,8 +65,8 @@ foreach ($Token in $Archives.Keys)
 	-replace "Sophia_Script_Windows_10_LTSC_2021",                $JSON.Sophia_Script_Windows_10_LTSC_2021 `
 	-replace "Sophia_Script_Windows_11_PowerShell_5_1",           $JSON.Sophia_Script_Windows_11 `
 	-replace "Sophia_Script_Windows_11_PowerShell_7",             $JSON.Sophia_Script_Windows_11 `
-	-replace "Sophia_Script_Windows_11_ARM_PowerShell_5_1",       $JSON.Sophia_Script_Windows_11 `
-	-replace "Sophia_Script_Windows_11_ARM_PowerShell_7",         $JSON.Sophia_Script_Windows_11 `
+	-replace "Sophia_Script_Windows_11_Arm_PowerShell_5_1",       $JSON.Sophia_Script_Windows_11 `
+	-replace "Sophia_Script_Windows_11_Arm_PowerShell_7",         $JSON.Sophia_Script_Windows_11 `
 	-replace "Sophia_Script_Windows_11_LTSC_2024_PowerShell_5_1", $JSON.Sophia_Script_Windows_11_LTSC_2024 `
 	-replace "Sophia_Script_Windows_11_LTSC_2024_PowerShell_7",   $JSON.Sophia_Script_Windows_11_LTSC_2024 `
 	-replace "Sophia_Script_Wrapper",                             $JSON.Sophia_Script_Wrapper
@@ -75,5 +75,5 @@ foreach ($Token in $Archives.Keys)
 # https://trstringer.com/github-actions-multiline-strings/
 Add-Content -Path $env:GITHUB_OUTPUT -Value "ReleaseBody=ReleaseNotesTemplate.md"
 
-$ReleaseName = Get-Date -f "dd.MM.yyyy"
-echo "RELEASE_NAME=$ReleaseName" >> $env:GITHUB_ENV
+$ReleaseName = Get-Date -Format "dd.MM.yyyy"
+Add-Content -Path $env:GITHUB_ENV -Value "RELEASE_NAME=$ReleaseName"
